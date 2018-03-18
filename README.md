@@ -7,4 +7,4 @@ Project folder should be located under the openFrameworks apps folder
 
 for example:
 
-<openFrameworks path>/apps/MyApps/convolution_feedback
+[openFrameworks path]/apps/MyApps/convolution_feedback

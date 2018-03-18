@@ -1,0 +1,13 @@
+#version 150
+
+uniform sampler2DRect tex;
+uniform sampler2DRect palette;
+in vec2 texCoordVarying;
+out vec4 outputColor;
+
+void main()
+{
+    float texValue = texture(tex, texCoordVarying).r;
+    vec4 color = texture(palette, vec2(texValue * 256, 0) );
+    outputColor = color;
+}
